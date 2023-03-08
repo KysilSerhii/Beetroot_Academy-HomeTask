@@ -1,0 +1,9 @@
+body {
+  background-color: #ece2e2;
+  padding: 0px 20px;
+}
+img {
+  max-width: 200px;
+  min-height: 200px;
+  border-radius: 30%;
+}
