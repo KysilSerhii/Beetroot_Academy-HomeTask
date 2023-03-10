@@ -1,0 +1,242 @@
+.wrapper {
+  min-height: 100%;
+  overflow: hidden; /* Щоб не зявлявся горизонтальний скрол*/
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto; /*Виставить будь який блочний елемент по центру*/
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.header {
+}
+.header__row {
+  background-color: #fff;
+  border-bottom: 1px solid #000;
+  padding: 25px 0;
+}
+.header__item {
+  display: flex;
+  justify-content: center;
+  
+}
+.header__items {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  padding-left: 40px;
+  color: #828282;
+}
+.header__items:first-child {
+  padding: 0;
+}
+.header__items:hover {
+  color: #000;
+}
+
+.page {
+  flex: 1 1 auto;
+}
+
+.page__hi {
+  
+}
+.page__title {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 65px;
+  color:#070707;
+  margin: 15px 0 50px 0px;
+}
+.page__picture {
+  width: 100%;
+}
+
+.page__about {
+  background-color: #E5E5E5;
+}
+.about {
+  
+}
+.about__title {
+  padding: 100px 0 50px 0;
+}
+.title {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 46px;
+  text-align: center;
+  color: #000;
+}
+.about__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 100px;
+}
+.about__text {
+  margin-bottom: 30px;
+  max-width: 480px;
+  text-align: center;
+}
+.about__text:last-child {
+  margin: 0;
+}
+.text {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #000;
+}
+
+.page__skills {
+}
+.skills {
+}
+.skills__block {
+  margin: 100px 0 50px 0;
+}
+.skills__title {
+  padding: 20px;
+}
+.skills__text {
+  margin-bottom: 100px;
+}
+.skills__row {
+  margin-bottom: 100px;
+}
+.skills__column {
+  
+  
+}
+.skills__item {
+  display: flex;
+  justify-content: space-between;
+  
+}
+.skills__items {
+  text-align: center;
+
+}
+.skills__logo {
+  margin-bottom: 25px;
+  max-width: 80px;
+}
+.skills__p {
+  margin-bottom: 60px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #828282;
+}
+.skills__star {
+}
+
+.page-background {
+  background-color: #e5e5e5;
+}
+.page__portfolio {
+  
+}
+.portfolio {
+  
+}
+.portfolio__shop {
+}
+.portfolio__title {
+  padding: 100px 0 50px 0;
+}
+
+.portfolio__image {
+  width: 100%;
+}
+.portfolio__text {
+  margin: 40px 0 70px 0;
+}
+.portfolio__reebook {
+  /* margin-top: 100px;
+  padding-top: 40px; */
+  width: 100%;
+}
+.portfolio__text-reebok {
+  margin: 40px 0 70px 0;
+}
+.portfolio__braun {
+  width: 100%;
+}
+.portfolio__text-braun {
+  margin: 40px 0 0 0;
+  padding-bottom: 100px;
+}
+
+.footer {
+}
+.footer__content {
+  text-align: center;
+}
+.footer__title {
+  margin: 100px 0 20px 0;
+}
+.footer__text {
+  margin-bottom: 60px;
+}
+.footer__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn__content {
+  background-color: #000;
+  color: #fff;
+  border-radius: 22px;
+  width: 180px;
+  height: 44px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+.footer__social {
+  display: flex;
+  justify-content: center;
+}
+.footer__items {
+  padding: 0 25px 0 25px;
+  margin-bottom: 60px;
+  align-items: center;
+}
+.footer__icons {
+  
+}
+.footer__like-me {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: #828282;
+  margin-bottom: 100px;
+}
