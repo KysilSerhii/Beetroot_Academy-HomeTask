@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/mormalaiz.css">
+  <link rel="stylesheet" href="style/style.css">
+  <title>Form</title>
+</head>
+<body>
+  <form action="#" method="post" enctype="multipart/form-data">
+    <fieldset>
+      <legend>Форма для заповненя даних</legend>
+      <div>
+        <p>Повне ім'я:</p>
+        <input tabindex="1" type="text" name="username" placeholder="Ім'я">
+      </div>
+      <div>
+        <p>Email:</p>
+        <input tabindex="2" type="email" name="usermail" >
+      </div>
+      <div>
+        <p>Пароль:</p>
+        <input tabindex="3" type="password" name="userpass">
+      </div>
+      <div>
+        <p>Пароль ще раз:</p>
+        <input tabindex="4" type="password" name="userpass">
+      </div>
+      <div>
+        <p>Стать:</p>
+        <input tabindex="5" type="radio" name="gender" value="male" id="man"> <label for="man">Чоловіча</label>
+        <input tabindex="5" type="radio" name="gender" value="female" id="women"> <label for="women">Жіноча</label>
+      </div>
+      <div>
+        <p>Вік</p>
+        <input placeholder="Вік" tabindex="6" type="text" name="age">
+      </div>
+      <br>
+      <div>
+        <p>Курс:</p>
+        <select tabindex="7" name="Courses" >
+          <option value="Front-End">Front-End Розробка</option>
+          <option value="Python">Python Розробка</option>
+          <option value="C#">C# Розробка</option>
+          <option value="Digital Marketing">Digital Marketing</option>
+        </select>
+      </div>
+      <div>
+        <p >Повна адреса:</p>
+        <textarea name="Address" cols="30" rows="10"></textarea>
+      </div>
+      <div class="checkbox" id="agry">
+        <label class="nonMargin" for="agry">Я погоджуюсь з обробкою персольних даних</label>
+        <input type="checkbox">
+      </div>
+      <div>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </div>
+    </fieldset>
+  </form>
+</body>
+</html>
