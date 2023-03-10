@@ -5,6 +5,7 @@ body {
   margin: 30px;
 }
 div {
+  padding-top: 20px;
   padding-bottom: 20px;
   border-bottom: 2px solid;
 }
@@ -27,4 +28,7 @@ button:hover {
 }
 .checkbox {
   margin-top: 20px;
+}
+#checked {
+  margin-left: 10px;
 }
