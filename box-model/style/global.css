@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Lucida Sans Unicode';
+    src: url(./Lucida+Sans+Unicode.woff) format('woff'),
+         url(./Lucida+Sans+Unicode.woff2) format('woff2');
+  }
+
+body {
+    text-align: center;
+    color: #fff;
+} 
+.wrapper {
+    min-height: 100%;
+    overflow: hidden; 
+  }
+
+  .container {
+    max-width: 1170px;
+    margin: 0 auto; /*Виставить будь який блочний елемент по центру*/
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
