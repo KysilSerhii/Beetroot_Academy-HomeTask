@@ -65,7 +65,7 @@
   color: #544837;
 }
 
-.page__btn {
+.btn {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 700;
@@ -80,4 +80,143 @@
   margin-top: 60px;
   width: 644px;
   height: 495px;
+}
+
+/*==================================> Second block <=================================================*/
+.page__features {
+  padding-top: 100px;
+}
+
+.page__second {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.second__title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  color: #2F281E;
+
+  max-width: 539px;
+  margin-bottom: 50px;
+}
+
+.second__card {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+
+  margin-bottom: 70px;
+}
+
+.second__item {
+  width: 270px;
+  height: 175px;
+}
+
+.second__text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+
+  margin: 30px 0 16px 0;
+}
+
+.second__description {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.second__button {
+  max-width: 180px;
+  margin-bottom: 74px;
+}
+
+/*==================================> Second block <=================================================*/
+
+.footer__block {
+  display: flex;
+  gap: 130px;
+  padding-bottom: 70px;
+}
+
+.footer__logo {
+  width: 200px;
+  height: 32px;
+}
+
+.footer__quick {
+  display: flex;
+  flex-direction: column;
+}
+
+.quick {
+  max-width: 135px;
+}
+
+.name {
+  font-family: 'Gotham';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+.list {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #544837;
+  margin-bottom: 15px;
+}
+
+.footer__legal {
+  display: flex;
+  flex-direction: column;
+  max-width: 135px;
+}
+
+.footer__knowing {
+  display: flex;
+  flex-direction: column;
+}
+
+.knowing {
+  width: 340px;
+}
+
+.knowling__title {
+  font-family: 'Gotham';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.knowing__input {
+  width: 340px;
+  height: 50px;
+  
+  border: 1px solid #BCD0E5;
+
+  padding: 0px 10px;
+  margin: 25px 0;
+}
+.knowing__btn {
+  width: 180px;
+  height: 50px;
 }
