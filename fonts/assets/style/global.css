@@ -1,0 +1,46 @@
+.wrapper {
+	min-height: 100%;
+	/* overflow: hidden;  */
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+[class*= __container]{
+	max-width: 1170px;
+	margin: 0 auto; 
+	padding: 0 15px;
+	box-sizing: border-box;
+}
+
+a {
+	color: #000000;
+}
+
+.title {
+	font-family: 'Francois One';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 48px;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+
+	color: #000000;
+}
+
+.bold {
+	font-weight: 700;
+}
+
+.bgc-gray {
+	background-color: rgb(114, 114, 114);
+}
+
+.italic {
+	font-style: italic;
+}
+
+.underline {
+	text-decoration: underline;
+}

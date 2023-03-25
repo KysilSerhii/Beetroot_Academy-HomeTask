@@ -1,0 +1,57 @@
+.using {
+	padding: 70px 0;
+}
+
+.using__container {
+	position: relative;
+}
+
+.using__title {
+	margin-bottom: 40px;
+	margin-left: 120px;
+}
+.using__title::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 20px;
+	width: 100px;
+	height: 8px;
+	background-color: #000;
+}
+
+.using__card {
+  background-color: transparent;
+  width: 270px;
+  height: 180px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+
+.using__swap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.using__card:hover .using__swap {
+	transform: rotateX(180deg);
+}
+
+.using__front, .using__back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+}
+
+.using__back {
+	transform: rotateX(180deg);
+}
+
+.using__pict {
+	width: 270px;
+	height: 180px;
+}
