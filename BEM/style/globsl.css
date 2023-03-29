@@ -1,0 +1,13 @@
+.wrapper {
+  min-height: 100%;
+  overflow: hidden; /* Щоб не зявлявся горизонтальний скрол*/
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto; 
+  padding: 0 15px;
+  box-sizing: border-box;
+}

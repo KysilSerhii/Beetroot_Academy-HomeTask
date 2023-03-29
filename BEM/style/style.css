@@ -1,0 +1,162 @@
+/*============================    HEADER    ==========================*/
+.header__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 170px;
+  height: 60px;
+}
+
+.header__menu {
+  margin: 28px 246px 28px 206px;
+}
+
+.menu__list {
+  display: flex;
+  gap: 30px;
+}
+
+.menu__link {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #3C3C3C;
+  text-transform: uppercase;
+}
+
+.header__btn {
+  padding: 10px 20px;
+  border: 1px solid ;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #3C3C3C;
+  background-color: #fff;
+}
+
+.header__btn:hover {
+  background-color: #18B5DC;
+  color: #F6F6F6;
+}
+/*============================    MAIN    ==========================*/
+.page {
+  flex: 1 1 auto;
+  background-color: #F6F6F6;
+}
+
+.page__content {
+ text-align: center;
+}
+
+.page__title {
+  margin: 150px 0 40px;
+  padding-bottom: 20px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 41px;
+  text-align: center;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: #3C3C3C;
+  position: relative;
+}
+
+.page__title::after {
+  content: " ";
+  position: absolute;
+  left: 48%;
+  bottom: 0;
+  width: 45px;
+  height: 4px;
+  background: #DDDBDB;;
+}
+
+.page__text {
+  margin: 0 auto;
+  max-width: 570px;
+  color: color: #3C3C3C;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.page__cards {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.page__employees {
+  text-align-last: left;
+}
+
+.employees__photo {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+.employees__photo:hover {
+  cursor: pointer;
+}
+
+.employees__name {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #282528;
+}
+
+.employees__profession {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: #646464;
+}
+/*============================    FOOTER    ==========================*/
+
+.footer {
+  
+}
+
+.footer__block {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+.footer__logo {
+  margin: 0 auto;
+}
+.footer__menu {
+  margin: 0 auto;
+  padding: 28px 0;
+}
+.footer__social {
+  margin-bottom: 20px;
+
+}
+.footer__link {
+
+}
+.footer__image {
+}

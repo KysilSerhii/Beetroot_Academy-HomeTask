@@ -1,0 +1,83 @@
+.header__content {
+  display: inline-block;
+}
+
+.header__logo {
+  margin:24px 200px 24px 0;
+}
+
+.header__menu {
+  display: inline-block;
+  margin: 26px 0 26px;
+}
+
+.header__link {
+  display: inline-block;
+  margin-right: 20px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.header__link:last-child {
+  margin-right: 200px;
+}
+
+.header__btn {
+  padding: 13px 22.5px;
+  margin: 17px 11px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.header__btn_orange {
+  color: #fff;
+  background-color: #FF9900;
+}
+
+.page__article {
+  display: inline-block;
+  width: 500px;
+  height: 301px;
+}
+
+.page__title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 54px;
+  margin: 167px 0 30px 0;
+}
+
+.page__text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 20px;
+  color: #544837;
+}
+
+.page__btn {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 13px 43.5px;
+  color: #fff;
+  background-color: #FF9900;
+}
+
+.page__image {
+  margin-top: 60px;
+  width: 644px;
+  height: 495px;
+}
