@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="assets/css/index.css">
+	<title>Style-form</title>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="block">
+			<div class="block__container">
+				<div class="block__content">
+					<div class="block__create create">
+						<h2 class="create__title title">Create an Account</h2>
+						<form class="create__form" action="get">
+	
+							<div class="create__item">
+								<label class="create__label label" for="">First Name</label>
+								<input class="create__input input" type="text">
+							</div>
+	
+							<div class="create__item">
+								<label class="create__label label" for="">Last Name</label>
+								<input class="create__input input" type="text">
+							</div>
+	
+							<div class="create__item">
+								<label class="create__label label" for="">E-mail</label>
+								<input class="create__input input" type="text">
+								<p class="create__hint">We'll never share your email with anyone else.</p>
+							</div>
+	
+							<div class="create__item_row">
+								<label class="create__label-gender" for="male">
+									<span class="create__circle"></span>
+									<input class="create__radio" type="radio" name="gender" id="male">Male
+								</label>
+								<label class="create__label-gender" for="female">
+									<span class="create__circle"></span>
+									<input class="create__radio" type="radio" name="gender" id="female">Female
+								</label>
+							</div>
+	
+							<div class="create__item">
+								<label class="create__label label" for="country">Country</label>
+								<select class="create__select" name="country" id="country">
+									<option value="country" >Choose a country</option>
+									<option value="ukraine">Ukraine</option>
+									<option value="usa">USA</option>
+									<option value="poland">Poland</option>
+									<option value="germany">Germany</option>
+								</select>
+							</div>
+	
+							<div class="create__item">
+								<label class="create__label label" for="">First Name</label>
+								<input class="create__input input" type="text">
+							</div>
+
+							<button class="create__button" type="submit">Sign Up</button>
+						</form>
+					</div>
+	
+					<div class="block__profile profile">
+						<h2 class="profile__title title">Profile</h2>
+						<form class="profile__form" action="get">
+							<div class="profile__photo">
+								<img class="profile__img" src="" alt=""/>
+								<div class="profile__load">
+									<input class="profile__input input" type="file" name="" id=""/>
+									<label class="profile__label label" for="">Up to 1 MB (300x300 px)</label>
+								</div>
+								<img class="profile__dump" src="" alt=""/>
+							</div>
+							<div class="profile__grid">
+								<div class="profile__item">
+									<label class="profile__label label" for="">First Name</label>
+									<input class="profile__input input" type="text">
+								</div>
+								<div class="profile__item">
+									<label class="profile__label label" for="">First Name</label>
+									<input class="profile__input input" type="text">
+								</div>
+								<div class="profile__item">
+									<label class="profile__label label" for="">First Name</label>
+									<select class="profile__select" name="" id="">
+										<option class="profile__option" value=""></option>
+										<option class="profile__option" value=""></option>
+										<option class="profile__option" value=""></option>
+										<option class="profile__option" value=""></option>
+										<option class="profile__option" value=""></option>
+										<option class="profile__option" value=""></option>
+									</select>
+								</div>
+								<div class="profile__item">
+									<label class="profile__label label" for="">First Name</label>
+									<input class="profile__input input" type="text">
+								</div>
+								<div class="profile__item">
+									<label class="profile__label label" for="">First Name</label>
+									<input class="profile__input input" type="text">
+								</div>
+								<div class="profile__item">
+									<label class="profile__label label" for="">First Name</label>
+									<input class="profile__input input" type="text">
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
