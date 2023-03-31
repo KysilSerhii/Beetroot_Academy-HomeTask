@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&family=Roboto:wght@400;500;700&display=swap");
+@import "../css/normalize.css";
+@import "../css/variables.css";
+.wrapper {
+  min-height: 100vh;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+[class*=__container] {
+  max-width: 1470px;
+  margin: 0 auto;
+  padding: 0 135px;
+}
+
+.header {
+  text-align: center;
+}
+.header__content {
+  position: relative;
+}
+.header__text {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #898F8F;
+}
+.header__title {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 66px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--primal-500);
+  margin: 15px 0 40px;
+}
+.header__bonfire::before {
+  content: " ";
+  position: absolute;
+  left: 31%;
+  bottom: 8%;
+  width: 210px;
+  height: 1px;
+  background-color: var(--primal-500);
+}
+.header__bonfire::after {
+  content: " ";
+  position: absolute;
+  right: 31%;
+  bottom: 8%;
+  width: 210px;
+  height: 1px;
+  background-color: var(--primal-500);
+}
+
+.page {
+  margin-top: 105px;
+}
+.page__colums {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.border {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.border.__photo {
+  border: 1px solid var(--primal-500);
+}
+.border__blocks {
+  width: 100px;
+  height: 100px;
+}
+.border__blocks_left-top {
+  position: absolute;
+  border-left: 1px solid var(--primal-500);
+  border-top: 1px solid var(--primal-500);
+  top: 10px;
+  left: 85px;
+}
+.border__blocks_right-top {
+  position: absolute;
+  border-right: 1px solid var(--primal-500);
+  border-top: 1px solid var(--primal-500);
+  top: 10px;
+  right: 85px;
+}
+.border__blocks_left-bottom {
+  position: absolute;
+  border-left: 1px solid var(--primal-500);
+  border-bottom: 1px solid var(--primal-500);
+  bottom: 10px;
+  left: 85px;
+}
+.border__blocks_right-bottom {
+  position: absolute;
+  border-right: 1px solid var(--primal-500);
+  border-bottom: 1px solid var(--primal-500);
+  bottom: 10px;
+  right: 85px;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.about::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 560px;
+  background-color: var(--primal-500);
+  left: 0;
+  top: -90px;
+}
+.about__title {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #666666;
+  margin-bottom: 60px;
+}
+.about__sub-title {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #666666;
+  margin-bottom: 30px;
+}
+.about__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5px;
+  margin-bottom: 50px;
+}
+.about__text {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  max-width: 430px;
+  color: #333333;
+  margin-bottom: 50px;
+}
+.about__view {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #666666;
+  border: 1px solid var(--primal-500);
+  padding: 5px 10px;
+}
