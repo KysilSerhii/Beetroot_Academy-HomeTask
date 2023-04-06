@@ -1,8 +1,9 @@
 .block {
+	display: flex;
+	margin-top: 40px;
 	&__content {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		gap: 30px;
+		width: 570px;
+		
 	}
 
 	&__create {
@@ -23,6 +24,7 @@
 	&__item {
 		display: flex;
 		flex-direction: column;
+		position: relative;
 	}
 	&__item:nth-child(3) {
 		grid-column: span 2;
@@ -68,34 +70,124 @@
 		margin-top: 5px;
 	}
 
-	&__radio {
-		height: 1px;
-		width: 1px;
-		position: absolute;
-		overflow: hidden;
-		// clip-path: circle(0, 0, 0, 0);
-		padding-left: 20px;
+	&__item_row {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+
+		grid-gap: 20px;
 	}
 
-	&__radio:checked + &__circle::after {
-		content: "";
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		width: 16px;
-		height: 16px;
-		border: 5px solid #007BFF;
-		// border-radius: 50%;
-		transform: translate(-50%, -50%);
+ &__label-gender {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+
+		grid-gap: 8px;
+
+		cursor: pointer;
 	}
 
 	&__circle {
-		content: "";
-		position: absolute;
-		width: 16px;
-		height: 16px;
-		border: 1px solid #007BFF;
+		border: 1px solid #E4E4E4;
 		border-radius: 50%;
-		margin-left: -20px;
+		background-color: #FFFFFF;
+
+		width: 20px;
+		height: 20px;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		position: relative;
+	}
+
+	&__circle:after {
+  content: " ";
+
+		position: absolute;
+		width: 8px;
+		height: 8px;
+
+		border-radius: 50%;
+		background-color: #FFFFFF;
+	}
+
+	&__radio { display: none; }
+
+	&__radio:checked + .create__circle {
+  background-color: #007BFF;
+	}
+
+	&__select {
+		margin-top: 7px;
+		padding: 8px;
+
+		border: 1px solid #E4E4E4;
+		border-radius: 10px;
+		
+		font-family: 'Roboto';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 15px;
+		line-height: 22px;
+		letter-spacing: -0.2px;
+		color: #545454;
+
+		-webkit-appearance: none;
+		-moz-appearance: none;
+	}
+	&__select::after {
+		content: "";
+		// position: absolute;
+		width: 8px;
+		height: 8px;
+		background-color: #070707;
+		bottom: 16%;
+		right: 3px;
+	}
+	&__arrow {
+		position: absolute;
+		bottom: 16%;
+		right: 3px;
+	}
+	&__button {
+		grid-column: span 2;
+		padding: 8px;
+
+		background: #007BFF;
+		border: 1px solid #E4E4E4;
+		border-radius: 6px;
+
+		font-family: 'Roboto';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 15px;
+		line-height: 22px;
+		text-align: center;
+		letter-spacing: -0.1px;
+		color: #FFFFFF;
+	}
+	&__bot {
+		margin: 22px 71px;
+		max-width: 410px;
+	}
+	&__confirm {
+		font-family: 'Roboto';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 13px;
+		line-height: 18px;
+		text-align: center;
+		letter-spacing: -0.1px;
+
+		color: #969696;
+		text-align: center;
+	}
+	&__log-in {
+		display: flex;
+		justify-content: center;
+		gap: 20px;
 	}
 }

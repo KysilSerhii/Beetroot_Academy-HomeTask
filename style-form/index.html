@@ -28,25 +28,32 @@
 	
 							<div class="create__item">
 								<label class="create__label label" for="">E-mail</label>
-								<input class="create__input input" type="text">
+								<input class="create__input input" type="text" >
 								<p class="create__hint">We'll never share your email with anyone else.</p>
 							</div>
 	
 							<div class="create__item_row">
 								<label class="create__label-gender" for="male">
+									<input class="create__radio" type="radio" name="gender" id="male">
 									<span class="create__circle"></span>
-									<input class="create__radio" type="radio" name="gender" id="male">Male
+									<span class="create__name">Male</span>
 								</label>
 								<label class="create__label-gender" for="female">
+									<input class="create__radio" type="radio" name="gender" id="female">
 									<span class="create__circle"></span>
-									<input class="create__radio" type="radio" name="gender" id="female">Female
+									<span class="create__name">Female</span>
 								</label>
 							</div>
 	
 							<div class="create__item">
 								<label class="create__label label" for="country">Country</label>
+								<span class="create__arrow">
+									<svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M6 0.25L0.75 5.5H11.25L6 0.25ZM6 13.75L0.75 8.5H11.25L6 13.75Z" fill="#969696"/>
+									</svg>
+								</span>
 								<select class="create__select" name="country" id="country">
-									<option value="country" >Choose a country</option>
+									<option value="country" disabled selected >Choose a country</option>
 									<option value="ukraine">Ukraine</option>
 									<option value="usa">USA</option>
 									<option value="poland">Poland</option>
@@ -55,59 +62,19 @@
 							</div>
 	
 							<div class="create__item">
-								<label class="create__label label" for="">First Name</label>
+								<label class="create__label label" for="">City</label>
 								<input class="create__input input" type="text">
 							</div>
 
 							<button class="create__button" type="submit">Sign Up</button>
 						</form>
-					</div>
-	
-					<div class="block__profile profile">
-						<h2 class="profile__title title">Profile</h2>
-						<form class="profile__form" action="get">
-							<div class="profile__photo">
-								<img class="profile__img" src="" alt=""/>
-								<div class="profile__load">
-									<input class="profile__input input" type="file" name="" id=""/>
-									<label class="profile__label label" for="">Up to 1 MB (300x300 px)</label>
-								</div>
-								<img class="profile__dump" src="" alt=""/>
-							</div>
-							<div class="profile__grid">
-								<div class="profile__item">
-									<label class="profile__label label" for="">First Name</label>
-									<input class="profile__input input" type="text">
-								</div>
-								<div class="profile__item">
-									<label class="profile__label label" for="">First Name</label>
-									<input class="profile__input input" type="text">
-								</div>
-								<div class="profile__item">
-									<label class="profile__label label" for="">First Name</label>
-									<select class="profile__select" name="" id="">
-										<option class="profile__option" value=""></option>
-										<option class="profile__option" value=""></option>
-										<option class="profile__option" value=""></option>
-										<option class="profile__option" value=""></option>
-										<option class="profile__option" value=""></option>
-										<option class="profile__option" value=""></option>
-									</select>
-								</div>
-								<div class="profile__item">
-									<label class="profile__label label" for="">First Name</label>
-									<input class="profile__input input" type="text">
-								</div>
-								<div class="profile__item">
-									<label class="profile__label label" for="">First Name</label>
-									<input class="profile__input input" type="text">
-								</div>
-								<div class="profile__item">
-									<label class="profile__label label" for="">First Name</label>
-									<input class="profile__input input" type="text">
-								</div>
-							</div>
-						</form>
+						<div class="create__bot">
+							<p class="create__confirm">By clicking the 'Sign Up' button, you confirm that you accept our <a href="" class="create__accept">Terms of Use</a> and <a href="" class="create__accept">Privacy Policy</a></p>
+						</div>
+						<div class="create__log-in">
+							<span class="create__questions">Have an account?</span>
+							<a class="create__log" href="">Log In</a>
+						</div>
 					</div>
 				</div>
 			</div>
