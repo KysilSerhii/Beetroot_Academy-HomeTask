@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@400;500&display=swap");
+@import './normalaiz.css';
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #e5e5e5;
+}
+
+[class*=__container] {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #1C1C1C;
+}
+
+.label {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: -0.2px;
+  color: #545454;
+}
+
+.block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 40px;
+}
+.block__content {
+  width: 570px;
+}
+.block__create {
+  padding: 35px;
+}
+
+.create {
+  background-color: #fff;
+}
+.create__title {
+  margin-bottom: 20px;
+}
+.create__form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 12px 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px 12px;
+}
+.create__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+.create__item:nth-child(3) {
+  -ms-grid-column-span: 2;
+  grid-column: span 2;
+}
+.create__item_row {
+  -ms-grid-column-span: 2;
+  grid-column: span 2;
+}
+.create__label-gender {
+  margin: 0 20px;
+  position: relative;
+}
+.create__input {
+  min-width: 245px;
+  max-height: 38px;
+  border: 1px solid #E4E4E4;
+  border-radius: 6px;
+  margin-top: 7px;
+  padding: 10px;
+  font-size: 18px;
+}
+.create__input:focus {
+  background: #FFFFFF;
+  border: 1px solid #007BFF;
+  border-radius: 6px;
+}
+.create__hint {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: -0.1px;
+  color: #969696;
+  margin-top: 5px;
+}
+.create__item_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  grid-gap: 20px;
+}
+.create__label-gender {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  grid-gap: 8px;
+  cursor: pointer;
+}
+.create__circle {
+  border: 1px solid #E4E4E4;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  width: 20px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+.create__circle:after {
+  content: " ";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+}
+.create__radio {
+  display: none;
+}
+.create__radio:checked + .create__circle {
+  background-color: #007BFF;
+}
+.create__select {
+  margin-top: 7px;
+  padding: 8px;
+  border: 1px solid #E4E4E4;
+  border-radius: 10px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: -0.2px;
+  color: #545454;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.create__select::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: #070707;
+  bottom: 16%;
+  right: 3px;
+}
+.create__arrow {
+  position: absolute;
+  bottom: 16%;
+  right: 3px;
+}
+.create__button {
+  -ms-grid-column-span: 2;
+  grid-column: span 2;
+  padding: 8px;
+  background: #007BFF;
+  border: 1px solid #E4E4E4;
+  border-radius: 6px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: -0.1px;
+  color: #FFFFFF;
+}
+.create__bot {
+  margin: 22px 71px;
+  max-width: 410px;
+}
+.create__confirm {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: -0.1px;
+  color: #969696;
+  text-align: center;
+}
+.create__log-in {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+}

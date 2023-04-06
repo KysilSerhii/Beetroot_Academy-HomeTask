@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="assets/css/index.css">
+	<title>Style-form</title>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="block">
+			<div class="block__container">
+				<div class="block__content">
+					<div class="block__create create">
+						<h2 class="create__title title">Create an Account</h2>
+						<form class="create__form" action="get">
+	
+							<div class="create__item">
+								<label class="create__label label" for="">First Name</label>
+								<input class="create__input input" type="text">
+							</div>
+	
+							<div class="create__item">
+								<label class="create__label label" for="">Last Name</label>
+								<input class="create__input input" type="text">
+							</div>
+	
+							<div class="create__item">
+								<label class="create__label label" for="">E-mail</label>
+								<input class="create__input input" type="text" >
+								<p class="create__hint">We'll never share your email with anyone else.</p>
+							</div>
+	
+							<div class="create__item_row">
+								<label class="create__label-gender" for="male">
+									<input class="create__radio" type="radio" name="gender" id="male">
+									<span class="create__circle"></span>
+									<span class="create__name">Male</span>
+								</label>
+								<label class="create__label-gender" for="female">
+									<input class="create__radio" type="radio" name="gender" id="female">
+									<span class="create__circle"></span>
+									<span class="create__name">Female</span>
+								</label>
+							</div>
+	
+							<div class="create__item">
+								<label class="create__label label" for="country">Country</label>
+								<span class="create__arrow">
+									<svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M6 0.25L0.75 5.5H11.25L6 0.25ZM6 13.75L0.75 8.5H11.25L6 13.75Z" fill="#969696"/>
+									</svg>
+								</span>
+								<select class="create__select" name="country" id="country">
+									<option value="country" disabled selected >Choose a country</option>
+									<option value="ukraine">Ukraine</option>
+									<option value="usa">USA</option>
+									<option value="poland">Poland</option>
+									<option value="germany">Germany</option>
+								</select>
+							</div>
+	
+							<div class="create__item">
+								<label class="create__label label" for="">City</label>
+								<input class="create__input input" type="text">
+							</div>
+
+							<button class="create__button" type="submit">Sign Up</button>
+						</form>
+						<div class="create__bot">
+							<p class="create__confirm">By clicking the 'Sign Up' button, you confirm that you accept our <a href="" class="create__accept">Terms of Use</a> and <a href="" class="create__accept">Privacy Policy</a></p>
+						</div>
+						<div class="create__log-in">
+							<span class="create__questions">Have an account?</span>
+							<a class="create__log" href="">Log In</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

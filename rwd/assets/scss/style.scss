@@ -1,0 +1,56 @@
+.header {
+	&__block {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		margin: 40px 0;
+	}
+	&__navigation {
+		display: flex;
+		gap: 84px;
+		margin-right: 10px;
+	}
+	&__list {
+		display: flex;
+		gap: 42px;
+	}
+	&__item:hover {
+		text-decoration: underline;
+	}
+	&__link {
+		font-family: 'Lato', sans-serif;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 17px;
+		letter-spacing: 0.3em;
+		text-transform: uppercase;
+		color: #000000;
+	}
+}
+
+.page{
+	display: flex;
+	justify-content: center;
+	flex: 1 1 auto;
+}
+
+.first {
+	width: 1440px;
+	height: 600px;
+	background-image: url("../image/bg-image.jpg");
+	&__title {
+		margin-top: 100px;
+
+		font-family: 'Red Hat Display', sans-serif;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 48px;
+		line-height: 64px;
+		letter-spacing: 0.05em;
+		color: #000000;
+
+		max-width: 770px;
+	}
+}
