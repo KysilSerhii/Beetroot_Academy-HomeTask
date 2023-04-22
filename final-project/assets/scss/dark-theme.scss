@@ -1,0 +1,114 @@
+body {
+	background-color: var(--primal--dark--900);
+	color: var(--primal--white--500);
+}
+
+[class*=__title] {
+	color: var(--primal--white--500);
+}
+.text {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 144%;
+	opacity: 0.8;
+	color: var(--primal--white--500);
+}
+
+.link-btn {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 100%;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--primal--white--500);
+}
+
+.span__green {
+	color: var(--primal--dark--300);
+}
+
+a::after {
+	color: var(--primal--green--400);
+}
+
+.foot-text {
+	color: var(--primal--white--500);
+}
+.foot-description {
+	color: var(--primal--white--500);
+}
+
+.header {
+	&__main-background {
+		background: url(../image/white/first-screen-image-dark.png) 0% 0%/ 100% 100% no-repeat;
+	}
+	&__main-gradient {
+		background: linear-gradient(183.11deg, rgba(22, 25, 38, 0) 46.73%, #161926 63.21%);
+	}
+	&__link {
+		color: var(--primal--white--500);
+	}
+}
+#switchMode {
+	font-family: "Lato";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 171%;
+	letter-spacing: 0.08em;
+	color: var(--primal--white--700);
+	background-color: var(--primal--dark--900);
+}
+
+.navigation-mobile {
+	background: linear-gradient(183.11deg, rgba(22, 25, 38, .9) 46.73%, #161926 63.21%);
+	.navigation__list-item-link {
+		font-family: 'Lato';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 171%;
+		letter-spacing: 0.08em;
+		color: var(--primal--white--500);
+	}
+}
+.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
+  position: absolute;
+  width: 40px;
+  height: 4px;
+  transition-timing-function: ease;
+  transition-duration: .15s;
+  transition-property: transform;
+  border-radius: 4px;
+  background-color: var(--primal--white--500);
+}
+
+.info {
+	&__content {
+		background: var(--primal--dark--900);
+		opacity: 0.9;
+	}
+}
+.promises {
+	&__card {
+		background-color: var(--primal--dark--900);
+	}
+}
+.contacts {
+	&__input {
+		background-color: var(--primal--dark--900);
+		color: var(--primal--white--500);
+		
+	}
+	&__label {
+		color: var(--primal--white--500);
+		opacity: 0.5;
+	}
+	&__link {
+		background-color: var(--primal--dark--900);
+	}
+}

@@ -1,0 +1,287 @@
+@media screen and (max-width: 1100px) {
+	.promises {
+		&__card {
+			margin-left: -400px;
+		}
+	}
+}
+
+@media screen and (max-width: 870px) {
+	.info {
+		&__block {
+			position: relative;
+			margin: 0 auto;
+		}
+		&__image {
+			position: absolute;
+		}
+		&__content {
+			margin: 0;
+		}
+		&__item {
+			padding: 0 10px;
+		}
+	}
+	.quote {
+		&__background {
+			padding: 50px;
+		}
+		&__icon {
+			top: -13%;
+			left: -5%;
+		}
+	}
+	.video {
+		&__block {
+			padding: 50px;
+		}
+		&__circle-big {
+			top: 46%;
+		}
+		&__screen {
+			margin: 21px 50px 21px 20px;
+		}
+		&__logo-circle {
+			width: 100%;
+			max-width: 80px;
+			max-height: 80px;
+		}
+	}
+	.promises {
+		&__image {
+			position: absolute;
+			top: -20px;
+			bottom: -20px;
+			left: 0;
+			z-index: -1;
+		}
+		&__card {
+			margin: 0;
+		}
+	}
+	.revues {
+		&__cards {
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.header {
+		&__main-background {
+			opacity: 0.5;
+		}
+		&__block {
+			margin: 30px 0 80px;
+		}
+	}
+	.first-screen {
+		margin-bottom: 150px;
+		&__text {
+			font-size: 23px;
+			font-weight: normal;
+		}
+	}
+	.link-btn {
+		font-size: 30px;
+	}
+	.info {
+		&__content {
+			flex-direction: column;
+			max-width: 100%;
+			bottom: -50px;
+		}
+		&__items {
+			display: flex;
+			align-items: center;
+		}
+		&__item {
+			max-width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+		&__title {
+			font-size: 43px;
+		}
+		&__item-lines::after {
+			content: " ";
+			position: absolute;
+			height: 1px;
+			width: 100px;
+			right: 50%;
+			transform: translate(50%, 0);
+			
+			bottom: -20px;
+			background-color: var(--primal--green--500);
+		}
+		&__text {
+			margin-bottom: 10px;
+		}
+		&__items-text {
+			margin-top: 30px;
+			text-align: center;
+			max-width: 100%;
+		}
+	}
+	.benefit {
+		margin: 80px 0 50px;
+		padding: 30px 0;
+		&__block {
+			grid-template-columns: repeat(1, 1fr);
+			gap: 30px;
+		}
+		&__card {
+			text-align: center;
+		}
+	}
+	.quote {
+		&__background {
+			padding: 50px;
+		}
+	}
+	.video {
+		&__block {
+			padding: 0;
+		}
+		&__circle-big {
+			width: 25px;
+			height: 25px;
+		}
+		&__screen {
+			margin: 21px 40px 21px 20px;
+		}
+		&__logo-circle {
+			width: 100%;
+			max-width: 60px;
+			max-height: 60px;
+		}
+	}
+	.promises {
+		&__card {
+			grid-template-columns: repeat(1, 1fr);
+			width: 100%;
+			padding: 0;
+			text-align: center;
+
+			opacity: 0.8;
+		}
+		&__button {
+			margin: 0 auto;
+			padding: 37px 89px 33px 89px;
+		}
+		&__link {
+			display: flex;
+			width: 200px;
+		}
+	}
+	.revues {
+		text-align: center;
+		&__content {
+			margin: 0 auto;
+			margin-bottom: 20px;
+		}
+		&__card {
+			max-width: 600px;
+		}
+		&__description {
+			font-size: 24px;
+		}
+	}
+	.contacts {
+		text-align: center;
+		&__block {
+			flex-direction: column;
+			gap: 60px;
+		}
+		&__form {
+			align-items: center;
+		}
+		&__link {
+			width: 100%;
+			max-width: 300px;
+		}
+	}
+	.footer {
+		text-align: center;
+		&__block {
+			align-items: center;
+			justify-content: center;
+		}
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.info {
+		&__title {
+			font-size: 33px;
+		}
+	}
+	.benefit {
+		margin: 60px 0 50px;
+		&__block {
+			grid-template-columns: repeat(1, 1fr);
+		}
+		&__card {
+			padding: 10px 10px;
+		}
+	}
+
+	.quote {
+		text-align: center;
+		&__icon {
+			display: none;
+		}
+	}
+	.footer {
+		text-align: center;
+		&__block {
+			align-items: center;
+			justify-content: center;
+		}
+	}
+}
+
+@media screen and (max-width: 360px) {
+	.header {
+		&__main-background {
+			opacity: 0.3;
+		}
+		&__block {
+			margin: 30px 0 40px;
+		}
+	}
+	.navigation-mobile {
+		width: 100%;
+		min-width: 320px;
+		padding: 10px;
+	}
+	.first-screen {
+		text-align: center;
+	}
+	.link-btn {
+		font-size: 40px;
+	}
+
+	.info {
+		&__content {
+			justify-content: center;
+		}
+		&__items {
+			flex-direction: column;
+		}
+		&__item {
+			margin-top: 20px;
+		}
+		&__title {
+			font-size: 38px;
+		}
+	}
+	.quote {
+		text-align: center;
+		&__icon {
+			display: none;
+		}
+	}
+}
