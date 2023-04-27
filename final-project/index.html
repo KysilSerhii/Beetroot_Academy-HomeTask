@@ -8,6 +8,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/index.css">
+	<link rel="stylesheet" href="#" id="theme">
 	<title>Solis</title>
 </head>
 <body>
@@ -34,6 +35,9 @@
 								</svg>
 							</span>
 						</div>
+						<div class="header__switch">
+							<button type="button" id="switchMode">Switch theme</button>
+						</div>
 						<div class="header__menu">
 							<nav class="header__navigation">
 								<ul class="header__list">
@@ -43,6 +47,33 @@
 									<li class="header__item"><a href="" class="header__link">Use Cases</a></li>
 									<li class="header__item"><a href="" class="header__link">Pricing</a></li>
 									<li class="header__item"><a href="" class="header__link">Resources</a></li>
+								</ul>
+							</nav>
+						</div>
+
+						<div class="burger-control">
+							<div class="hamburger hamburger--squeeze js-hamburger">
+								<div class="hamburger-box">
+									<div class="hamburger-inner"></div>
+								</div>
+							</div>
+							<nav class="navigation navigation-mobile">
+								<ul class="navigation__list">
+									<li class="navigation__list-item">
+										<a class="navigation__list-item-link" href="">Home</a>
+									</li>
+									<li class="navigation__list-item">
+										<a class="navigation__list-item-link" href="">About</a>
+									</li>
+									<li class="navigation__list-item">
+										<a class="navigation__list-item-link" href="">Works</a>
+									</li>
+									<li class="navigation__list-item">
+										<a class="navigation__list-item-link" href="">Blog</a>
+									</li>
+									<li class="navigation__list-item">
+										<a class="navigation__list-item-link" href="">Contacts</a>
+									</li>
 								</ul>
 							</nav>
 						</div>
@@ -74,7 +105,7 @@
 									<h3 class="info__title"><span class="info__dollar">$</span>3.65 mil</h3>
 									<p class="info__text text">Deposited to platform</p>
 								</div>
-								<div class="info__item">
+								<div class="info__item info__item-lines">
 									<h3 class="info__title">12</h3>
 									<p class="info__text text">Stablecoins</p>
 								</div>
@@ -140,7 +171,7 @@
 							<div class="video__screen">
 								<img class="video__image" src="assets/image/white/screensaver-video.png" alt="#"/>
 								<span class="video__logo">
-									<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<svg class="video__logo-circle" width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<circle opacity="0.3" cx="60" cy="60" r="60" fill="#586291"/>
 										<path d="M81.3175 58.615C82.0301 58.9898 82.0301 60.0102 81.3175 60.385L50.7155 76.4826C50.0496 76.8329 49.25 76.35 49.25 75.5976L49.25 43.4024C49.25 42.65 50.0496 42.1671 50.7155 42.5174L81.3175 58.615Z" fill="#262A3F"/>
 									</svg>
@@ -211,7 +242,7 @@
 				<div class="container">
 					<div class="contacts__block">
 						<div class="contacts__content">
-							<h4 class="contacts__title">Contact <span class="span__gren">our sales team</span></h4>
+							<h4 class="contacts__title">Contact <span class="span__green">our sales team</span></h4>
 							<p class="contacts__text text">Our team is happy to answer your sales questions.Fill out the form and we’ll be in touch as soon as possible.</p>
 						</div>
 						<div class="contacts__data">
@@ -252,5 +283,6 @@
 			</div>
 		</footer>
 	</div>
+	<script src="js/index.js"></script>
 </body>
 </html>
