@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Document</title>
+	<script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+</head>
+<body>
+	<form action="#">
+		<label class="title_film-name" for="film-name">Write movie name</label>
+		<input id="film-name" class="name-movie" type="text">
+		<button class="button" type="button">Search</button>
+		<div class="block-check">
+			<label class="label" for="movie">
+				<input class="input" id="movie" type="radio" name="main-input" value="movie" checked>Movie
+			</label>
+			<label class="label" for="series">
+				<input class="input" id="series" type="radio" name="main-input" value="series">Series
+			</label>
+			<label class="label" for="episode">
+				<input class="input" id="episode" type="radio" name="main-input" value="episode">Episode
+			</label>
+		</div>
+	</form>
+	<ul class="mail-list">
+
+	</ul>
+	<script src="index.js"></script>
+</body>
+</html>
