@@ -79,6 +79,9 @@ const otherSwiper = new Swiper('.swiper-news', {
   },
 });
 
+const markers = document.createElement('span');
+markers.classList.add = 'local-custom-marker';
+markers.innerHTML = '<div class="custom-block"><svg stroke="currentColor" fill="currentColor" height="32" width="32" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M256 32L32 224h128l96-80 96 80h128L256 32zm0 176l-52 39H32v18h172l52 39 52-39h172v-18H308l-52-39zM32 288l224 192 224-192H352l-96 80-96-80H32z"></path></svg></div>'
 let map;
 
 async function initMap() {
@@ -101,6 +104,7 @@ async function initMap() {
     map: map,
     position: position,
     title: "Uluru",
+		content: markers,
   });
 }
 
@@ -140,5 +144,9 @@ submitForm.addEventListener('submit', e => {
 	e.preventDefault();
 	const userName = document.querySelector('.footer__form-input-name').value ;
 	const userEmail = document.querySelector('.footer__form-input-email').value ;
-	
+	const modalWindow = document.querySelector('.footer__modal-windows');
+	// console.log(modalWindow)
+	modalWindow.classList.toggle('hide-window');
+	const successfulModal = document.querySelector('.footer__modal-windows-hide-element')
+	successfulModal.classList.toggle('visible-modal')
 })
