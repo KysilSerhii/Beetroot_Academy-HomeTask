@@ -1,0 +1,19 @@
+body {
+	font-size: 36px;
+	font-weight: 700;
+}
+#color {
+	padding: 10px 5px;
+	font-size: 20px;
+	font-weight: 700;
+}
+#AmountOfInk {
+	padding: 10px 5px;
+	font-size: 20px;
+	font-weight: 700;
+}
+.colorTheme {
+	padding: 10px 5px;
+	font-size: 20px;
+	font-weight: 700;
+}
